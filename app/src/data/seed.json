@@ -1,0 +1,105 @@
+{
+  "_comment": "Mock data for the PoolBuy prototype. All suppliers, sellers and prices are made up. Times are relative to when the demo loads so the data always looks current.",
+  "suppliers": [
+    { "id": "s-linden", "name": "Yiwu Linden Bag Co.", "location": "Zhejiang, China", "yearsOnPlatform": 8, "verified": true, "tradeAssurance": true },
+    { "id": "s-brightpack", "name": "Dongguan Brightpack Packaging Co.", "location": "Guangdong, China", "yearsOnPlatform": 11, "verified": true, "tradeAssurance": true },
+    { "id": "s-cottonfield", "name": "Guangzhou Cottonfield Garments Co.", "location": "Guangdong, China", "yearsOnPlatform": 6, "verified": true, "tradeAssurance": true },
+    { "id": "s-casewell", "name": "Shenzhen Casewell Accessories Co.", "location": "Guangdong, China", "yearsOnPlatform": 5, "verified": true, "tradeAssurance": true },
+    { "id": "s-greenwrap", "name": "Xiamen Greenwrap Materials Co.", "location": "Fujian, China", "yearsOnPlatform": 9, "verified": true, "tradeAssurance": true },
+    { "id": "s-clearwave", "name": "Hebei Clearwave Glassware Co.", "location": "Hebei, China", "yearsOnPlatform": 7, "verified": true, "tradeAssurance": true },
+    { "id": "s-quicklabel", "name": "Quicklabel Trading", "location": "Zhejiang, China", "yearsOnPlatform": 1, "verified": false, "tradeAssurance": false }
+  ],
+  "products": [
+    {
+      "id": "p-tote", "name": "Custom printed cotton canvas tote bag (12 oz)", "shortName": "Custom tote bags",
+      "category": "Accessories", "image": "tote", "supplierId": "s-linden",
+      "description": "Natural 12 oz canvas, 1-colour screen print. One print design per 100 bags, so each seller can use their own logo.",
+      "tiers": [ { "minQty": 100, "unitPriceCents": 300 }, { "minQty": 500, "unitPriceCents": 150 }, { "minQty": 1000, "unitPriceCents": 100 } ],
+      "shippingPerUnitCents": 25, "maxOrderQty": 3000
+    },
+    {
+      "id": "p-box", "name": "Kraft mailer boxes, custom size, 1-colour print", "shortName": "Kraft packaging boxes",
+      "category": "Packaging", "image": "box", "supplierId": "s-brightpack",
+      "description": "Food-safe kraft board, ships flat. Popular with home bakers and cafés.",
+      "tiers": [ { "minQty": 200, "unitPriceCents": 80 }, { "minQty": 1000, "unitPriceCents": 45 }, { "minQty": 3000, "unitPriceCents": 32 } ],
+      "shippingPerUnitCents": 12, "maxOrderQty": 10000
+    },
+    {
+      "id": "p-tshirt", "name": "Blank 180 gsm cotton T-shirt (S to XXL mix)", "shortName": "Blank T-shirts",
+      "category": "Apparel", "image": "tshirt", "supplierId": "s-cottonfield",
+      "description": "Pre-shrunk ring-spun cotton, 8 colours. Sizes can be mixed within your quantity.",
+      "tiers": [ { "minQty": 50, "unitPriceCents": 420 }, { "minQty": 300, "unitPriceCents": 260 }, { "minQty": 1000, "unitPriceCents": 210 } ],
+      "shippingPerUnitCents": 30, "maxOrderQty": 5000
+    },
+    {
+      "id": "p-phone", "name": "Custom printed silicone phone cases (popular models)", "shortName": "Custom phone cases",
+      "category": "Accessories", "image": "phonecase", "supplierId": "s-casewell",
+      "description": "Soft-touch silicone, full-colour UV print. Models can be mixed within your quantity.",
+      "tiers": [ { "minQty": 100, "unitPriceCents": 180 }, { "minQty": 500, "unitPriceCents": 95 }, { "minQty": 2000, "unitPriceCents": 70 } ],
+      "shippingPerUnitCents": 8, "maxOrderQty": 6000
+    },
+    {
+      "id": "p-mailer", "name": "Recycled poly mailer bags, custom 1-colour print (25 x 35 cm)", "shortName": "Custom poly mailers",
+      "category": "Packaging", "image": "mailer", "supplierId": "s-greenwrap",
+      "description": "60% recycled LDPE with a peel-and-seal strip. Every online seller needs these.",
+      "tiers": [ { "minQty": 200, "unitPriceCents": 45 }, { "minQty": 1000, "unitPriceCents": 24 }, { "minQty": 5000, "unitPriceCents": 16 } ],
+      "shippingPerUnitCents": 4, "maxOrderQty": 20000
+    },
+    {
+      "id": "p-jar", "name": "Amber glass jars with bamboo lids (200 ml)", "shortName": "Amber glass jars",
+      "category": "Packaging", "image": "jar", "supplierId": "s-clearwave",
+      "description": "For candles, bath salts and dry goods. Lids fit snugly with a silicone seal.",
+      "tiers": [ { "minQty": 100, "unitPriceCents": 110 }, { "minQty": 500, "unitPriceCents": 62 }, { "minQty": 2000, "unitPriceCents": 48 } ],
+      "shippingPerUnitCents": 22, "maxOrderQty": 8000
+    },
+    {
+      "id": "p-label", "name": "Custom woven clothing labels", "shortName": "Woven labels",
+      "category": "Apparel", "image": "label", "supplierId": "s-quicklabel",
+      "description": "Damask weave, end-fold. Listed by a supplier that is not yet verified.",
+      "tiers": [ { "minQty": 500, "unitPriceCents": 9 }, { "minQty": 2000, "unitPriceCents": 5 } ],
+      "shippingPerUnitCents": 1, "maxOrderQty": 50000
+    }
+  ],
+  "users": [
+    { "id": "u-mei", "displayName": "Mei T.", "fullName": "Mei Tan", "business": "Mei Makes · tote bags on Instagram and Carousell", "isDemoUser": true },
+    { "id": "u-arjun", "displayName": "Arjun N.", "fullName": "Arjun Nair", "business": "Crumb & Co. · home bakery", "isDemoUser": true },
+    { "id": "u-siti", "displayName": "Siti R.", "fullName": "Siti Rahman", "business": "Siti Studio · print-on-demand apparel", "isDemoUser": true },
+    { "id": "u-huimin", "displayName": "Hui Min L.", "fullName": "Hui Min Lim", "business": "Craft seller", "isDemoUser": false },
+    { "id": "u-daniel", "displayName": "Daniel K.", "fullName": "Daniel Koh", "business": "Gadget accessories", "isDemoUser": false },
+    { "id": "u-farah", "displayName": "Farah A.", "fullName": "Farah Aziz", "business": "Modest fashion", "isDemoUser": false },
+    { "id": "u-weijie", "displayName": "Wei Jie T.", "fullName": "Wei Jie Tan", "business": "Streetwear", "isDemoUser": false },
+    { "id": "u-priya", "displayName": "Priya S.", "fullName": "Priya Sharma", "business": "Cookie gifting", "isDemoUser": false }
+  ],
+  "pools": [
+    {
+      "id": "pool-tote", "productId": "p-tote", "organiserId": "u-huimin",
+      "title": "Custom tote bags for craft sellers", "note": "Send your logo after the pool fills. Collection at the Jurong East hub or delivery.",
+      "target": 500, "createdHoursAgo": 50, "deadlineInHours": 102, "closedHoursAgo": null,
+      "members": [ { "userId": "u-huimin", "qty": 150, "joinedHoursAgo": 50 }, { "userId": "u-daniel", "qty": 120, "joinedHoursAgo": 30 }, { "userId": "u-farah", "qty": 150, "joinedHoursAgo": 6 } ]
+    },
+    {
+      "id": "pool-box", "productId": "p-box", "organiserId": "u-arjun",
+      "title": "Kraft cake and cookie boxes", "note": "For home bakers. Food-safe kraft, 1-colour logo print.",
+      "target": 1000, "createdHoursAgo": 140, "deadlineInHours": 20, "closedHoursAgo": null,
+      "members": [ { "userId": "u-arjun", "qty": 200, "joinedHoursAgo": 140 }, { "userId": "u-priya", "qty": 180, "joinedHoursAgo": 70 } ]
+    },
+    {
+      "id": "pool-tshirt", "productId": "p-tshirt", "organiserId": "u-siti",
+      "title": "Blank tees for print-on-demand", "note": "Target reached. Still open: 660 more units gets everyone the US$2.10 tier.",
+      "target": 300, "createdHoursAgo": 96, "deadlineInHours": 53, "closedHoursAgo": null,
+      "members": [ { "userId": "u-siti", "qty": 120, "joinedHoursAgo": 96 }, { "userId": "u-weijie", "qty": 100, "joinedHoursAgo": 60 }, { "userId": "u-farah", "qty": 120, "joinedHoursAgo": 12 } ]
+    },
+    {
+      "id": "pool-phone", "productId": "p-phone", "organiserId": "u-daniel",
+      "title": "Phone cases, mixed models", "note": "Mix models within your quantity. Full-colour print.",
+      "target": 500, "createdHoursAgo": 22, "deadlineInHours": 216, "closedHoursAgo": null,
+      "members": [ { "userId": "u-daniel", "qty": 100, "joinedHoursAgo": 22 }, { "userId": "u-mei", "qty": 50, "joinedHoursAgo": 18 } ]
+    },
+    {
+      "id": "pool-jar", "productId": "p-jar", "organiserId": "u-priya",
+      "title": "Amber jars for candle makers", "note": "",
+      "target": 500, "createdHoursAgo": 260, "deadlineInHours": -72, "closedHoursAgo": 72,
+      "members": [ { "userId": "u-priya", "qty": 60, "joinedHoursAgo": 260 }, { "userId": "u-mei", "qty": 80, "joinedHoursAgo": 200 } ]
+    }
+  ]
+}
