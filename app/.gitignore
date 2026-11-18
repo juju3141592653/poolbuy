@@ -1,0 +1,20 @@
+# Dependencies and build output
+node_modules/
+dist/
+dist-single/
+coverage/
+*.tsbuildinfo
+
+# Secrets: never commit environment files (security check 2)
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Editor and OS clutter
+.DS_Store
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.log
