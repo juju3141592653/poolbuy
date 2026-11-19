@@ -2,7 +2,7 @@
 
 **PoolBuy** is a student concept for a group-buying feature on Alibaba.com. Several small sellers combine their orders so that together they reach a supplier's minimum order quantity (MOQ) and its bulk price. Payment is held, not taken, and pools are all-or-nothing: if a pool misses its target by the deadline, every hold is released automatically.
 
-> Student concept prototype for SC4025 (Developing Data Products), NTU. Not affiliated with Alibaba. All suppliers, sellers and prices are made up, and no real payment is taken.
+> Student concept prototype for SC4052 (Product Management), NTU. Not affiliated with Alibaba. All suppliers, sellers and prices are made up, and no real payment is taken.
 
 ## Run it locally
 
